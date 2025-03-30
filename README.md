@@ -18,9 +18,14 @@ O **CareLine** é um software inovador desenvolvido para aprimorar a comunicaç�
 ###
 
 ## Membros da Equipe
-- **[Nome do Membro 1]** - Função
-- **[Nome do Membro 2]** - Função
-- **[Nome do Membro 3]** - Função
+
+### Pietro Brandalise De Andrade - RM560142
+
+### Ícaro Henrique de Souza Calixto - RM560278
+
+### Caio Costa Beraldo - RM560775
+
+### Victor Kenzo Mikado- RM560057
 
 ## Funcionalidades Principais
 ### 1. Número de Chamada
