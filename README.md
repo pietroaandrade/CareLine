@@ -3,12 +3,19 @@
 ## Descrição
 O **CareLine** é um software inovador desenvolvido para aprimorar a comunicação entre os membros da equipe hospitalar e os pacientes no pronto-socorro. O foco principal é reduzir o estresse dos pacientes durante o tempo de espera, proporcionando informações claras e atualizadas sobre o status do atendimento.
 
-## Tecnologias Utilizadas
-- **Frontend:** React + Vite
-- **Linguagem de Programação:** JavaScript
-- **Gerenciamento de Estado:** LocalStorage
-- **Estilização:** CSS
-- **Controle de Versão:** GitHub
+<h3 align="left">​Tecnologias Utilizadas:</h3>
+
+###
+
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
+</div>
+
+###
 
 ## Membros da Equipe
 - **[Nome do Membro 1]** - Função
