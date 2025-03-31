@@ -10,6 +10,7 @@ export default function Header(){
                     <h1><a href="#">CareLine</a></h1>
                 </span>
                 <ul>
+                    <li><a  href="#">Home</a></li>
                     <li><a  href="#">Sobre</a></li>
                     <li><a  href="#">Serviços</a></li>
                     <li><a  href="#">Contato</a></li>

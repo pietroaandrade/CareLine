@@ -14,7 +14,7 @@ header{
 }
 
 header > span {
-    margin-left: 50px;
+    margin-left: 200px;
     display: flex;
     align-items: center;
 }
@@ -39,7 +39,7 @@ header > span >  h1 > a{
 header > ul {
     display: flex;
     list-style: none;
-    margin-right: 50px;
+    margin-right: 200px;
     
 }
 

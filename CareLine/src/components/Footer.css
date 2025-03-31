@@ -1,0 +1,105 @@
+footer {
+    display: flex;
+    height: 200px;
+    background-color: #282d35;
+    justify-content: space-between;
+}
+.left-side{
+    display: flex;
+    margin-left: 200px;
+}
+
+.quick-links > span{
+    display: flex;
+    align-items: center;
+
+}
+.quick-links > span > img {
+    width: 50px;
+    height: 50px;
+}
+.quick-links > span > h1 {
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.quick-links > span >  h1 > a{
+    color: inherit;
+    text-decoration: none ;
+    
+}
+.quick-links > ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 40px ;
+}
+.quick-links > ul > li{
+    color: white;
+    margin-top: 5px;
+}
+
+.quick-links > ul > li:hover{
+    text-decoration: underline ;
+}
+
+.quick-links > ul > li > a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.about{
+    margin-left: 40px ;
+    align-items: center;
+    padding-top: 20px;
+}
+.about > h1{
+    color: white;
+    font-size: 20px;
+}
+.about > p{
+    color: white;
+    padding-top: 10px;
+    
+}
+
+
+
+
+.right-side{
+    margin-right: 200px;
+    align-items: center;
+}
+.right-side > h1{
+    color: white;
+    margin-bottom: 10px;
+}
+.right-side > form {
+    padding-left: 0px;
+}
+.right-side > form > p{
+    color: white;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+    padding-left: 3px;
+
+}
+
+.right-side > form > input{
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px 30px 5px 10px;
+    width: 300px;
+    cursor: text;
+}
+.right-side > div {
+    display: flex;
+    justify-content: end;
+}
+.right-side > div > img {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
