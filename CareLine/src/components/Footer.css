@@ -64,8 +64,6 @@ footer {
 }
 
 
-
-
 .right-side{
     margin-right: 200px;
     align-items: center;
@@ -97,9 +95,30 @@ footer {
 .right-side > div {
     display: flex;
     justify-content: end;
+    height: 60px;
 }
-.right-side > div > img {
+
+.right-side > div > span > a > img  {
+    margin-top: 3px;
     width: 30px;
     height: 30px;
-    margin-left: 20px;
+    
 }
+
+.icon{
+    background-image: url("./images/circle.png");
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    width: 60px; 
+    height: 60px; 
+    transition: transform 0.3s ease;
+    
+}
+
+.icon:hover{
+    transform: scale(1.1);
+}   

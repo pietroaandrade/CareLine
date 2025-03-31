@@ -52,6 +52,7 @@ header > ul > li {
     cursor: pointer;
     position: relative;
     text-decoration: none;
+    transition: transform .3s ease;
     
 }
 header > ul > li > a{
@@ -69,7 +70,7 @@ li::after {
     transform: scaleX(0);
     transform-origin: left;
     background: #47b7ff;
-    transition: transform .3s;
+    transition: transform .3s ease;
 }
 
 header > ul > li:hover::after {
@@ -77,4 +78,9 @@ header > ul > li:hover::after {
     width: 100%;
     
     
+    
+}
+
+header > ul > li:hover{
+    transform: scale(1.1);
 }

@@ -29,9 +29,14 @@ export default function Footer(){
                         <input type="email" id="email" name="email" placeholder="Enter your email here..."></input>
                         
                     </form>
-                    <div> 
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Instagram"/>
-                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github" />
+                    <div > 
+                        <span className="icon">
+                            <a href="#"><img src="https://www.iconpacks.net/icons/2/free-instagram-logo-icon-3497-thumb.png" alt="Instagram"/></a>
+                        </span>
+                        <span className="icon" >
+                            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github" /></a>
+                        </span>
+                        
                     </div>
                 </div>
                 
