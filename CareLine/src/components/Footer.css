@@ -122,3 +122,20 @@ footer {
 .icon:hover{
     transform: scale(1.1);
 }   
+
+.copy {
+    align-self: center;
+    text-align: center; 
+    background-color: #282d35;
+    color: white; 
+    padding: 10px 0; 
+    font-weight: bold; 
+}
+.copy a {
+    color: #47b7ff; 
+    text-decoration: none; 
+    margin: 0 5px; 
+}
+.copy a:hover {
+    text-decoration: underline; 
+}

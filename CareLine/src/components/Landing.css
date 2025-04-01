@@ -1,0 +1,133 @@
+.sec-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.sec-1 > img{
+    width: 530px;
+    border-radius: 25px;
+}
+
+.sec-1 > h3{
+    font-weight: 500;
+    font-size: 22px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.sec-1 > h3 > span{
+    font-weight: 800;
+}
+
+.sec-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.sec-2 > div > h3{
+    font-weight: 500;
+    font-size: 22px;
+    
+}
+.sec-2 > div > h3 > span{
+    font-weight: 800;
+}
+
+.sec-2 > img{
+    width: 530px;
+    border-radius: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+.sec-2 > div > a {
+    color: inherit;
+    text-decoration: none;
+}
+.sec-2 > div > a > button {
+    width: 350px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #47b7ff; 
+    border: 3px solid #47b7ff; 
+    padding: 0; 
+    margin: 0; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.sec-2 > div > a > button:hover {
+    background-color: #47a6ff; 
+    border: 3px solid #47b7ff; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05);
+    
+}
+
+.sec-2 > div > a > button > span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sec-3{
+    margin-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #415a82;
+
+}
+.sec-3 > h1{
+   color: white;
+   font-size: 32px;
+
+}
+.sec-3 > div{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+.sec-3 > div > div{
+    margin-left: 60px;
+    margin-right: 60px;
+    justify-content: center;
+}
+.sec-3 > div > div > img{
+    width: 90px;
+}
+.sec-3 > div > div > h3{
+    color: white;
+}
+
+.sec-3 > a {
+    color: inherit;
+    text-decoration: none;
+}
+.sec-3 > a > button {
+    width: 350px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #47b7ff; 
+    border: 3px solid #47b7ff; 
+    padding: 0; 
+    margin: 0; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.sec-3 > a > button:hover {
+    background-color: #47a6ff; 
+    border: 3px solid #47b7ff; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05);
+    
+}
+.sec-3 > a > button > span{
+    font-size: 20px;
+    font-weight: bold;
+}

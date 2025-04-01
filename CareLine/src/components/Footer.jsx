@@ -39,8 +39,17 @@ export default function Footer(){
                         
                     </div>
                 </div>
+            
                 
             </footer>
+            <div className="copy">
+                <p>
+                    © 2025 CareLine. All rights reserved. | 
+                    <a href="#"> Privacy Policy </a> | 
+                    <a href="#"> Terms of Service </a> | 
+                    Contact:<a href="mailto:support@careline.com">support@careline.com</a>
+                </p>
+            </div>
         </>
     )
 }
