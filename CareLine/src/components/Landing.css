@@ -69,9 +69,29 @@
 .sec-2 > div > a > button > span{
     font-size: 20px;
     font-weight: bold;
+    color: white;
 }
 
-.sec-3{
+.sec-3 {
+    text-align: center;
+    margin-top: 80px;
+    
+}
+.sec-3 > h3 {
+     color: grey;
+}
+.sec-3 > div > img {
+     height: 150px;
+     margin: auto 40px;
+     filter: grayscale();
+     transition: filter 0.2s ease-in-out;
+}
+.sec-3 > div > img:hover {
+     filter: none
+}
+ 
+
+.sec-4{
     margin-top: 60px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -82,34 +102,34 @@
     background-color: #415a82;
 
 }
-.sec-3 > h1{
+.sec-4 > h1{
    color: white;
    font-size: 32px;
 
 }
-.sec-3 > div{
+.sec-4 > div{
     display: flex;
     justify-content: center;
     margin-top: 40px;
 
 }
-.sec-3 > div > div{
+.sec-4 > div > div{
     margin-left: 60px;
     margin-right: 60px;
     justify-content: center;
 }
-.sec-3 > div > div > img{
+.sec-4 > div > div > img{
     width: 90px;
 }
-.sec-3 > div > div > h3{
+.sec-4 > div > div > h3{
     color: white;
 }
 
-.sec-3 > a {
+.sec-4 > a {
     color: inherit;
     text-decoration: none;
 }
-.sec-3 > a > button {
+.sec-4 > a > button {
     width: 350px;
     height: 60px;
     border-radius: 30px;
@@ -120,14 +140,252 @@
     cursor: pointer; 
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
 }
-.sec-3 > a > button:hover {
+.sec-4 > a > button:hover {
     background-color: #47a6ff; 
     border: 3px solid #47b7ff; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
     transform: scale(1.05);
     
 }
-.sec-3 > a > button > span{
+.sec-4 > a > button > span{
     font-size: 20px;
     font-weight: bold;
+    color: white;
+    
+}
+
+
+.sec-5 {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    padding-bottom: 60px;
+}
+
+.sec-5 > h1{
+    color: grey;
+    margin-bottom: 50px;
+    font-size: 38px;
+    
+}
+
+.sec-5 > div{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin-bottom: 40px;
+    
+}
+.card {
+    position: relative;
+    z-index: 1;
+    display: block;
+    height: 330px;
+    width: 100%; 
+    max-width: 500px; 
+    border-radius: 25px;
+    padding: 20px;
+    max-width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    padding: 0px 32px 15px;
+       
+}
+.card > div {
+    display: flex;
+}
+
+.card > div > h3 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #38b39b;
+    
+    
+}
+.card > div > img {
+    position: absolute; 
+    z-index: 2;
+    top: -30px; 
+    left: 215px;
+    
+
+}
+.card > ul > li{
+    width: 100%;
+    font-size: 22px;
+    font-weight: 500;
+    color: #828492;
+    padding: 0 0 11px 25px;
+}
+.card > ul > li::marker{
+    color: #38b39b;
+    
+}
+  
+
+.sec-5 > a {
+    color: inherit;
+    text-decoration: none;
+
+}
+.sec-5 > a > button {
+    width: 350px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #47b7ff; 
+    border: 3px solid #47b7ff; 
+    padding: 0; 
+    margin: 0; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.sec-5 > a > button:hover {
+    background-color: #47a6ff; 
+    border: 3px solid #47b7ff; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05);
+    
+}
+.sec-5 > a > button > span{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.sec-6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #2ABCB4, #4B63D4);
+    gap: 60px;
+}
+
+
+.container > h1{
+    font-size: 41px;
+    text-align: left;
+    font-weight: 500;
+    color: white;
+}
+
+.container > h1 > span{
+    font-size: inherit;
+    color: black;
+}
+
+.container p {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500px;
+    color: white;
+}
+
+.container > p > span{
+    font-size: inherit;
+    font-weight: 800;
+    color: inherit;
+}
+.container > img {
+    
+    height: 350px;
+    max-width: 350px;
+}
+
+.form-container {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 30px 30px;
+    height: 700px;
+    max-width: 300px;
+    margin: 80px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+}
+.form-container > form > div{
+    display: block;
+    margin-bottom: 15px;
+    max-width: 330px;
+}
+
+.form-container > form > div > label {
+    font-size: 15px;
+    color: #6f6f6f;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    display: block;
+    font-weight: bold;
+    text-align: left;
+}
+
+.form-container > form > div > input{
+    width: 100%;
+    height: 25px;
+    border: solid 1px grey;
+    
+}
+
+.phone-container{
+    width: 100%;
+}
+.phone-container > input{
+    width: 100%;
+    height: 25px;
+}
+
+
+.form-container > select, textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.phone-container {
+    display: flex;
+}
+
+.phone-container select {
+    width: 30%;
+    margin-right: 5px;
+}
+
+.QA > select {
+    text-align: left;
+    margin-left: 0;
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+
+.form-container > form > a {
+    color: inherit;
+    text-decoration: none;
+
+}
+.form-container > form > a > button {
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #47b7ff; 
+    border: 3px solid #47b7ff; 
+    padding: 0; 
+    margin-top: 30px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.form-container > form > a > button:hover {
+    background-color: #47a6ff; 
+    border: 3px solid #47b7ff; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05);
+    
+}
+.form-container > form > a > button > span{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    
 }
