@@ -136,7 +136,7 @@ export default function Main() {
                                         <option value="perfil2">Perfil 2</option>
                                     </select>
                                 
-                                    <label htmlFor="solution">Qual solução Pixeon te interessa?*</label>
+                                    <label htmlFor="solution">Qual solução CareLinee te interessa?*</label>
                                     <select id="solution" name="solution" required>
                                         <option value="">Selecione</option>
                                         <option value="solucao1">Solução 1</option>
