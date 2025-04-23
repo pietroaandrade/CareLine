@@ -6,7 +6,7 @@ export default function Contact() {
             <div className="contact">
                 <div className="title">
                     <h1>
-                        POTENCIAL NÃO <span>ESPERA</span>
+                        POTENCIAL <span>NÃO ESPERA</span>
                     </h1>
                     <p>
                         Agendar uma consultoria, conversar sobre suas ideias, implementar nossos sistemas ou 
