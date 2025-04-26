@@ -130,6 +130,13 @@ export default function Servicos(){
     return (
         <>  
             <Header />
+            <div className="banner-img">
+                <div className="content-img">
+                    <p>SOLUÇÃO SUSTENTÁVEL</p>
+                    <h1> Sustentavelmente pensado para   combater aumentos de CO2</h1>
+                    <p>Feito para combater o rápido crescimeto da demanda energética e   moldar o futuro no uso de energias renováveis — Com 95% material reciclado</p>
+                </div>
+            </div>
             <section className="sec-1">
                     <img src="./images/nissan.webp" alt="Doctor caring for kid" />
                     <h3>
@@ -138,8 +145,18 @@ export default function Servicos(){
                         transparente, redução do estresse dos pacientes <br /> aumentam a qualidade dos serviços, unindo <span> inovação e humanização<br /> 
                         no dia a dia hospitalar.</span>
                     </h3> 
-                </section>
-            <section className="sec-1">
+            </section>
+            <section className="servico-1">
+                    <div> 
+                        <h3>
+                            integra <span>dados em tempo real</span>, permitindo  <br /> <span>acesso rápido a laudos</span>, prescrições e  <br /> <span>status dos pacientes</span>.
+                            <br /> 
+                            <br /> Reduza o tempo de espera e melhore <br /> a comunicação, com um sistema que evolui  <br /> junto com a eficiência hospitalar.
+                        </h3>
+                    </div>
+                    <img src="./images/service.webp" alt="Doctor with ipad" />
+            </section>
+            <section className="servico-4">
                 <div className={`container-1 ${activeContainer === 'container1' ? 'active' : ''}`} 
                      onClick={() => handleContainerClick('container1')}>
                     <div className="number-container">
@@ -165,41 +182,75 @@ export default function Servicos(){
                     <h1>{containerData.container3.title}</h1>
                 </div>
             </section>
-            <section className="sec-2-servicos">
-                <div className="content-button">
-                    <button 
-                        className={`button ${activeButton === 'button1' ? 'active' : ''}`} 
-                        onClick={() => handleButtonClick('button1')}
-                    >
-                        <h3>{containerData[activeContainer || 'container1'].buttonTexts.button1}</h3>
-                    </button>
-                    <button 
-                        className={`button ${activeButton === 'button2' ? 'active' : ''}`} 
-                        onClick={() => handleButtonClick('button2')}
-                    >
-                        <h3>{containerData[activeContainer || 'container1'].buttonTexts.button2}</h3>
-                    </button>
-                    <button 
-                        className={`button ${activeButton === 'button3' ? 'active' : ''}`} 
-                        onClick={() => handleButtonClick('button3')}
-                    >
-                        <h3>{containerData[activeContainer || 'container1'].buttonTexts.button3}</h3>
-                    </button>
+            <section className="servico-5">
+                
+            
+                <div className="card-section">
+                    <div className="content-button">
+                        <button 
+                            className={`button ${activeButton === 'button1' ? 'active' : ''}`} 
+                            onClick={() => handleButtonClick('button1')}
+                        >
+                            <h3>{containerData[activeContainer || 'container1'].buttonTexts.button1}</h3>
+                        </button>
+                        <button 
+                            className={`button ${activeButton === 'button2' ? 'active' : ''}`} 
+                            onClick={() => handleButtonClick('button2')}
+                        >
+                            <h3>{containerData[activeContainer || 'container1'].buttonTexts.button2}</h3>
+                        </button>
+                        <button 
+                            className={`button ${activeButton === 'button3' ? 'active' : ''}`} 
+                            onClick={() => handleButtonClick('button3')}
+                        >
+                            <h3>{containerData[activeContainer || 'container1'].buttonTexts.button3}</h3>
+                        </button>
+                    </div>
+                    <div className="card-title">
+                        <h1>{getCurrentContent().title}</h1>
+                    </div>
+                    <div className="display-cards">
+                        
+                            <div className="card">
+                                <div>
+                                    <p>01</p>
+                                    <img src="./images/feed.png" alt="Imagem 1"/>
+                                </div>
+                                <h1>{getCurrentContent().items[0]}</h1>
+                            </div>
+                        
+                        
+                            <div className="card">
+                                <div>
+                                    <p>02</p>
+                                    <img src="./images/megafone.png" alt="Imagem 1" className="card-image"/>
+                                </div>
+                                <h1>{getCurrentContent().items[1]}</h1>
+                            </div>
+                        
+                        
+                            <div className="card">
+                                <div>
+                                    <p>03</p>
+                                    <img src="./images/feedback.png" alt="Imagem 1" className="card-image"/>
+                                </div>
+                                
+                                <h1>{getCurrentContent().items[2]}</h1>
+                            </div>
+                        
+                    </div>
+
                 </div>
-                <div className="content-display">
-                    <h1>{getCurrentContent().title}</h1>
-                    <ul>
-                        {getCurrentContent().items.map((item, index) => (
-                            <li key={index}>{item}</li>
-                        ))}
-                    </ul>
-                </div>
+
+
+                
             </section>
+
             <section className="sec-6">
                     <div className="container">
                         <h1>Transforme o seu negócio <br /> da área da saúde por <br /> meio da tecnologia. <br /> <span>Junte-se à CareLine!</span></h1>
                         <p>
-                            Quando você leva a CareLine para dentro da sua <br /> empresa, recebe mais do que soluções de <br /> ponta;   
+                            Quando você leva a CareLine para dentro da sua <br /> empresa, recebe mais do que soluções de <br /> ponta;    
                             <span>
                                 recebe a parceria estratégica de uma <br /> companhia com expertise em tecnologia para <br /> a área da saúde.
                             </span>
