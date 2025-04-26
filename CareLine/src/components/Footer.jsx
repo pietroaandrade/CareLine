@@ -5,7 +5,7 @@ export default function Footer(){
     return (
         <>
             <footer>
-                <div className="alberto">hello</div>
+                
                 <div className="left-side">
                     <div className="quick-links"> 
                         <span>
