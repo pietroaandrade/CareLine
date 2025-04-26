@@ -1,8 +1,17 @@
 import "./Contact.css";
+import Header from "./Header"
+import Footer from "./footer"
 
 export default function Contact() {
+    const handleSubmit = (event) => {
+        event.preventDefault(); // Prevent the default form submission
+        // Add your form submission logic here
+        console.log("Form submitted!");
+    };
+
     return (
         <>  
+            <Header />
             <div className="contact">
                 <div className="title">
                     <h1>
@@ -16,7 +25,7 @@ export default function Contact() {
                 </div>
 
                 <div className="container">
-                    <div className="form">
+                    <form onSubmit={handleSubmit} className="form">
                         <div className="row">
                             <div className="input-group">
                                 <label htmlFor="name">Qual é o seu nome?</label>
@@ -81,10 +90,11 @@ export default function Contact() {
                             <textarea id="help" placeholder="Escreva sua resposta aqui..." rows="4" required></textarea>
                         </div>
                     
-                        <a href="#"><button><span>Enviar Mensagem</span></button></a>
-                    </div>
+                        <button type="submit">Solicitar Demonstração</button>
+                    </form>
                 </div>
             </div>
+            <Footer />
         </>
     );
 }

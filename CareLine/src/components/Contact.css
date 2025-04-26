@@ -97,9 +97,12 @@
 .form textarea {
     resize: none; 
 }
-.form > a > button {
+.form > button {
     width: 350px;
     height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
     border-radius: 30px;
     background-color: #47b7ff; 
     border: 3px solid #47b7ff; 
@@ -108,16 +111,10 @@
     cursor: pointer; 
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
 }
-.form > a > button:hover {
+.form > button:hover {
     background-color: #47a6ff; 
     border: 3px solid #47b7ff; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
     transform: scale(1.05);
-    
-}
-.form > a > button > span{
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
     
 }

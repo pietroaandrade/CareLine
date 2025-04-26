@@ -1,8 +1,12 @@
 import "./Landing.css"
+import Header from ".//Header"
+import Footer from "./footer"
+import { Link } from "react-router"
 
 export default function Main() {
     return (
         <>
+            <Header />
             <main>
                 <section className="sec-1">
                     <img src="https://www.indiancrestpeds.com/wp-content/uploads/2016/07/6-Ways-a-Westminster-Pediatrician-Can-Help-.jpg" alt="Doctor caring for kid" />
@@ -20,7 +24,7 @@ export default function Main() {
                             <br /> 
                             <br /> Reduza o tempo de espera e melhore <br /> a comunicação, com um sistema que evolui  <br /> junto com a eficiência hospitalar.
                         </h3>
-                        <a href="#"><button><span> Melhor Pronto-Socorro </span></button></a>
+                        <Link to="/" ><button><span> Melhor Pronto-Socorro </span></button></Link>
                     </div>
                     <img src="https://media.istockphoto.com/id/1366374033/photo/shot-of-a-young-doctor-using-a-digital-tablet-in-a-modern-hospital.jpg?s=612x612&w=0&k=20&c=N0oQFd_0VKs3Q2o2YLCR5hTBNIVHqdiHsh2SaTKhPoM=" alt="Doctor with ipad" />
                 </section>
@@ -52,7 +56,7 @@ export default function Main() {
                             <h3>Governança total dos dados, <br /> atendendo à LGPD e demais <br /> normativas de saúde.</h3>
                         </div>
                     </div>
-                    <a href="#"><button><span> Fale conosco </span></button></a>
+                    <Link to="/Contato" ><button><span> Fale Conosco </span></button></Link>
                 </section>
 
                 <section className="sec-5">
@@ -83,7 +87,7 @@ export default function Main() {
                             </ul>
                         </div>
                     </div>
-                    <a href="#"><button><span> Como vamos te ajudar </span></button></a>
+                    <Link to="/Servicos" ><button><span> Como podemos te ajudar? </span></button></Link>
                 </section>
 
                 <section className="sec-6">
@@ -153,13 +157,14 @@ export default function Main() {
                                     <input type="checkbox" name="privacy" required />
                                     Estou de acordo com a Política de Privacidade!
                                 </label>
-                                <a href="#"><button><span>Solicitar Demonstração</span></button></a>
+                                <a href="#" type="submit"><button><span>Solicitar Demonstração</span></button></a>
                                 
                             </form>
                         </div>
                     </div>
                 </section>
             </main>
+            <Footer />
         </>
     )
 }

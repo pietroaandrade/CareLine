@@ -27,6 +27,12 @@
     
 }
 
+.container-1.active,
+.container-2.active,
+.container-3.active {
+    border: 3px solid #47a6ff;
+    transform: scale(1.05);
+}
 
 .container-1{
     background-image: url("../../images/background1.png");
@@ -86,7 +92,7 @@
     margin: 0;
 }
 
-.sec-2 {
+.sec-2-servicos {
     display: block;
     flex-direction: column;
     align-items: center;    
@@ -107,13 +113,24 @@
     text-align: center;
     border: 1px solid black;
     border-radius: 15px;
-    transition: transform 0.1s ease, box-shadow 0.1s ease; 
+    transition: all 0.3s ease;
+    background-color: white;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
 .button:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-    transform: translateY(-3px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
 }
+
+.button.active {
+    background-color: black;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 .button > h3{
     text-align: center;
     font-size: 15px;
@@ -138,3 +155,4 @@
     margin-top: 20px;
     
 }
+

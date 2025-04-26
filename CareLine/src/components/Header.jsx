@@ -1,4 +1,5 @@
 import "./Header.css"
+import { Link } from "react-router"
 
 
 export default function Header(){
@@ -7,13 +8,13 @@ export default function Header(){
             <header>
                 <span>
                     <img src="./images/logo.png" alt="CareLine Logo" />
-                    <h1><a href="#">CareLine</a></h1>
+                    <h1><Link to="/" >CareLine</Link></h1>
                 </span>
                 <ul>
-                    <li><a  href="#">Home</a></li>
-                    <li><a  href="#">Sobre</a></li>
-                    <li><a  href="#">Serviços</a></li>
-                    <li><a  href="#">Contato</a></li>
+                    <li><Link to="/" >Home</Link></li>
+                    <li><Link to="/" >Sobre</Link></li>
+                    <li><Link to="/Servicos" >Serviços</Link></li>
+                    <li><Link to="/Contato" >Contato</Link></li>
                 </ul>
             </header>   
                     
