@@ -1,0 +1,240 @@
+.banner-img {
+    width: 100%;
+    height: 50vh;
+    background-image:linear-gradient(to left, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.75)), 
+    url(../../images/dddoctor.png);;
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: right;
+    background-color: #5f5b58;
+}
+.content-img{
+    width:100%;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    color: #fff;
+    padding-left: 3em;
+    
+}
+.content-img h1{
+    font-size: 48px;
+    font-family: gerald-bold, sans-serif;
+    margin-bottom: 1rem;
+}
+.content-img p{
+    font-family: gerald, sans-serif;
+    font-size: 16px;
+    margin: auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: #ffffff;
+}
+.servico-4{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.servico-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.servico-1 > div > h3{
+    font-weight: 500;
+    font-size: 22px;
+    text-align: right;
+    
+}
+.servico-1> div > h3 > span{
+    font-weight: 800;
+}
+
+.servico-1 > img{
+    width: 530px;
+    border-radius: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+.container-1,
+.container-2, 
+.container-3 {
+    margin-left: 60px;
+    height: 250px;
+    width: 500px;
+    border-radius: 20px;
+    position: relative;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+    box-sizing: border-box;
+}
+
+.container-1:hover,
+.container-2:hover,
+.container-3:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border: 3px solid #282d35;
+    
+}
+
+.container-1.active,
+.container-2.active,
+.container-3.active {
+    border: 3px solid #47a6ff;
+    transform: scale(1.05);
+}
+
+.container-1{
+    background-image: url("../../images/background1.png");
+    background-size: cover; 
+    background-position: center; 
+}
+.container-2{
+    background-image: url("../../images/background2.png");
+    background-size: cover; 
+    background-position: center; 
+}
+.container-3{
+    background-image: url("../../images/background3.png");
+    background-size: cover; 
+    background-position: center; 
+}
+
+.number-container{
+    display: flex;
+    position: absolute; 
+    right: 10px; 
+    top: 10px; 
+    width: 80px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 40px;
+    justify-content: center; 
+    align-items: center; 
+    transition: transform 0.3s ease;
+    
+}
+.number-container > p{
+    color: white;
+    font-size: 20px;
+    
+
+    
+}
+.number-container > img{
+    margin-left: 8px;
+    width: 25px;
+    
+}
+.container-1 > h1,
+.container-2 > h1,
+.container-3 > h1 {
+    margin-top: 80px;
+    margin-left: 15px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: white;
+    
+}
+
+.number-container > p {
+    margin: 0;
+}
+
+.servico-5 {
+    justify-content: center;
+    align-items: center;
+    display: block;
+    padding-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    
+}
+.card-section {
+    display: block;
+}
+.card-title {
+    text-align: center;
+    margin-bottom: 20px; 
+    color: #ffffff; 
+    font-size: 30px; 
+    color: grey
+}
+
+.display-cards {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.card > div > p {
+    font-size: 30px;
+    color: #38b39b;
+}
+
+.text{
+    background-color: #151515;
+}
+
+.content-button{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    
+   
+    
+}
+
+.button {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background-color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+.button.active {
+    background-color: black;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button > h3{
+    text-align: center;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    
+}
+.content-display {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content-display > h1{
+    font-weight: bolder;
+    font-size: 35px;
+}
+.content-display > ul > li {
+    font-weight: 500;
+    font-size: 22px;
+    margin-top: 20px;
+    
+}
+
