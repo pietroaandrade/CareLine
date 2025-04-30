@@ -36,6 +36,7 @@ O **CareLine** é um software inovador desenvolvido para aprimorar a comunicaç�
 - Implementação de funções em JavaScript utilizando:
   - Estrutura de pai para filho.
   - Uso de **desestruturação** para manipulação de dados.
+  - Comunicação entre componentes via props.
 - Design fiel ao protótipo inicial, incluindo imagens, vídeos e fontes adequadas.
 - Versionamento do projeto no **GitHub**.
 
