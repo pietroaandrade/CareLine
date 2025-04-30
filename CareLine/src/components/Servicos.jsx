@@ -132,9 +132,9 @@ export default function Servicos(){
             <Header />
             <div className="banner-img">
                 <div className="content-img">
-                    <p>SOLUÇÃO SUSTENTÁVEL</p>
-                    <h1> Sustentavelmente pensado para   combater aumentos de CO2</h1>
-                    <p>Feito para combater o rápido crescimeto da demanda energética e   moldar o futuro no uso de energias renováveis — Com 95% material reciclado</p>
+                    <p>SOLUÇÃO PRÁTICA</p>
+                    <h1>Agilmente pensada para combater erros no seu hospital</h1>
+                    <p> CareLine, uma empresa especialista em tecnologia para gestão de saúde. Feito para melhorar a fluidez de informações e organização no seu hospital</p>
                 </div>
             </div>
             <section className="sec-1">
@@ -241,9 +241,6 @@ export default function Servicos(){
                     </div>
 
                 </div>
-
-
-                
             </section>
 
             <section className="sec-6">

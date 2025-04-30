@@ -1,9 +1,12 @@
 .banner-img {
     width: 100%;
-    height: 75vh;
-    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url(images/welding.avif); 
-    background-size: cover;
-    background-position: center;
+    height: 50vh;
+    background-image:linear-gradient(to left, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.75)), 
+    url(../../images/dddoctor.png);;
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: right;
+    background-color: #5f5b58;
 }
 .content-img{
     width:100%;
@@ -129,7 +132,6 @@
     margin-left: 8px;
     width: 25px;
     
-    
 }
 .container-1 > h1,
 .container-2 > h1,
@@ -152,6 +154,7 @@
     display: block;
     padding-top: 40px;
     margin-top: 30px;
+    margin-bottom: 60px;
     
 }
 .card-section {
@@ -174,11 +177,6 @@
     font-size: 30px;
     color: #38b39b;
 }
-
-
-
-
-
 
 .text{
     background-color: #151515;
