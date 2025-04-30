@@ -14,7 +14,7 @@ export default function Footer(){
                         </span>
                         <ul>
                             <li><Link to="/Contato">Contato</Link></li>
-                            <li><Link to="/">Sobre</Link></li>
+                            <li><Link to="/Sobre">Sobre</Link></li>
                             <li><Link to="/Servicos">Serviços</Link></li>
                         </ul>
                     </div>

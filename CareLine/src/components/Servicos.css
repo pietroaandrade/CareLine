@@ -19,16 +19,17 @@
 }
 .content-img h1{
     font-size: 48px;
-    font-family: gerald-bold, sans-serif;
+    font-family: Inter, sans-serif;
     margin-bottom: 1rem;
 }
 .content-img p{
-    font-family: gerald, sans-serif;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     margin: auto;
     font-weight: 100;
     line-height: 25px;
     color: #ffffff;
+    font-weight: bold;
 }
 .servico-4{
     margin-top: 100px;
