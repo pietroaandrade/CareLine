@@ -1,6 +1,5 @@
-# CareLine
+### CareLine
 
-## Descrição
 O **CareLine** é um software inovador desenvolvido para aprimorar a comunicação entre os membros da equipe hospitalar e os pacientes no pronto-socorro. O foco principal é reduzir o estresse dos pacientes durante o tempo de espera, proporcionando informações claras e atualizadas sobre o status do atendimento.
 
 <h3 align="left">​Tecnologias Utilizadas:</h3>
