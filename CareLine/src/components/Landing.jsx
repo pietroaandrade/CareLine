@@ -24,7 +24,7 @@ export default function Main() {
                             <br /> 
                             <br /> Reduza o tempo de espera e melhore <br /> a comunicação, com um sistema que evolui  <br /> junto com a eficiência hospitalar.
                         </h3>
-                        <Link to="/" ><button><span> Melhor Pronto-Socorro </span></button></Link>
+                        <Link to="/Servicos" ><button><span> Melhor Pronto-Socorro </span></button></Link>
                     </div>
                     <img src="https://media.istockphoto.com/id/1366374033/photo/shot-of-a-young-doctor-using-a-digital-tablet-in-a-modern-hospital.jpg?s=612x612&w=0&k=20&c=N0oQFd_0VKs3Q2o2YLCR5hTBNIVHqdiHsh2SaTKhPoM=" alt="Doctor with ipad" />
                 </section>

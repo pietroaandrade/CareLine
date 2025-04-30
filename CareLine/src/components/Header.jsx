@@ -23,7 +23,7 @@ export default function Header(){
                 </div>
                 <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
                     <li><Link to="/" >Home</Link></li>
-                    <li><Link to="/" >Sobre</Link></li>
+                    <li><Link to="/Sobre" >Sobre</Link></li>
                     <li><Link to="/Servicos" >Serviços</Link></li>
                     <li><Link to="/Contato" >Contato</Link></li>
                 </ul>

@@ -1,8 +1,7 @@
-import "./Servicos.css"
+    import "./Servicos.css"
 import Header from "./Header"
 import Footer from "./footer"
 import { useState } from "react"
-import { Link } from "react-router"
 
 export default function Servicos(){
     const [activeContainer, setActiveContainer] = useState(null);
