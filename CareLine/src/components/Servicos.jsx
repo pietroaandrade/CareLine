@@ -1,6 +1,6 @@
-    import "./Servicos.css"
+import "./Servicos.css"
 import Header from "./Header"
-import Footer from "./footer"
+import Footer from "./Footer"
 import { useState } from "react"
 
 export default function Servicos(){
