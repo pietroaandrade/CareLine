@@ -1,6 +1,6 @@
 import "./Landing.css"
 import Header from ".//Header"
-import Footer from "./footer"
+import Footer from "./Footer"
 import { Link } from "react-router"
 
 export default function Main() {
