@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 import "./Login.css"
 
-import api from "../axios";
+
 
 export default function Login(){
 
