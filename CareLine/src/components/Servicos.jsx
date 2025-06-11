@@ -1,6 +1,4 @@
 import "./Servicos.css"
-import Header from "./Header"
-import Footer from "./Footer"
 import { useState } from "react"
 
 export default function Servicos(){
@@ -128,7 +126,6 @@ export default function Servicos(){
 
     return (
         <>  
-            <Header />
             <div className="banner-img">
                 <div className="content-img">
                     <p>SOLUÇÃO PRÁTICA</p>
@@ -315,7 +312,7 @@ export default function Servicos(){
                         </div>
                     </div>
                 </section>
-            <Footer />
+            
         </>
     )
 }

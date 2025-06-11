@@ -1,6 +1,5 @@
 import "./Sobre.css"
-import Header from "./Header"
-import Footer from "./footer"
+
 import { useState } from "react";
 
 export default function Sobre() {
@@ -39,7 +38,6 @@ export default function Sobre() {
 
     return (
         <>
-            <Header />
             <div className="banner-img-sobre">
                 <div className="content-img-sobre">
                     <p>Sobre Nós</p>
@@ -147,7 +145,7 @@ export default function Sobre() {
                         </div>
                     </div>
                 </section>
-            <Footer />
+            
         </>
     );
 }

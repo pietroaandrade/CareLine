@@ -1,12 +1,10 @@
 import "./Landing.css"
-import Header from ".//Header"
-import Footer from "./Footer"
-import { Link } from "react-router"
+import { Link } from "react-router-dom"
 
 export default function Main() {
     return (
         <>
-            <Header />
+            
             <main>
                 <section className="sec-1">
                     <img src="https://www.indiancrestpeds.com/wp-content/uploads/2016/07/6-Ways-a-Westminster-Pediatrician-Can-Help-.jpg" alt="Doctor caring for kid" />
@@ -164,7 +162,6 @@ export default function Main() {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     )
 }

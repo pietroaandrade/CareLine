@@ -1,5 +1,5 @@
 import "./Footer.css"
-import { Link } from "react-router"
+import { Link } from "react-router-dom"
 
 export default function Footer(){
     return (
@@ -13,9 +13,9 @@ export default function Footer(){
                             <h1><a href="#">CareLine</a></h1>
                         </span>
                         <ul>
-                            <li><Link to="/Contato">Contato</Link></li>
-                            <li><Link to="/Sobre">Sobre</Link></li>
-                            <li><Link to="/Servicos">Serviços</Link></li>
+                            <li><Link to="/contact">Contato</Link></li>
+                            <li><Link to="/sobre">Sobre</Link></li>
+                            <li><Link to="/services">Serviços</Link></li>
                         </ul>
                     </div>
                     <div className="about">
@@ -32,10 +32,10 @@ export default function Footer(){
                     </form>
                     <div className="social-icons"> 
                         <span className="icon">
-                            <a href="#"><img src="https://www.iconpacks.net/icons/2/free-instagram-logo-icon-3497-thumb.png" alt="Instagram"/></a>
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="https://www.iconpacks.net/icons/2/free-instagram-logo-icon-3497-thumb.png" alt="Instagram"/></a>
                         </span>
                         <span className="icon">
-                            <a href="https://github.com/pietroaandrade/webdev_challenge.git" target="blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github" /></a>
+                            <a href="https://github.com/pietroaandrade/webdev_challenge.git" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github" /></a>
                         </span>
                     </div>
                 </div>
@@ -50,4 +50,4 @@ export default function Footer(){
             </div>
         </>
     )
-}
+} 

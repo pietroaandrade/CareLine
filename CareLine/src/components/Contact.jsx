@@ -1,6 +1,4 @@
 import "./Contact.css";
-import Header from "./Header"
-import Footer from "./footer"
 
 export default function Contact() {
     const handleSubmit = (event) => {
@@ -11,7 +9,6 @@ export default function Contact() {
 
     return (
         <>  
-            <Header />
             <div className="contact">
                 <div className="title">
                     <h1>
@@ -94,7 +91,7 @@ export default function Contact() {
                     </form>
                 </div>
             </div>
-            <Footer />
+            
         </>
     );
 }
