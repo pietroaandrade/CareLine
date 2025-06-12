@@ -12,6 +12,7 @@ import QueueManagement from "./components/Dashboard/QueueManagement"
 import PatientsOverview from "./components/Dashboard/PatientsOverview"
 import Sobre from "./components/Sobre"
 
+
 function App() {
   const [patients, setPatients] = useState({});
   const [nextId, setNextId] = useState(1);

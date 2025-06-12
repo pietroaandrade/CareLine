@@ -55,6 +55,7 @@ export default function Login(){
                     />
                     </div>
                 </div>
+                
                 {action==="Sign Up"? <div></div>:
                     <div className="recover">
                         <div className="forgot-password" onMouseOver={()=>{transform("transform")}} onMouseOut={()=>{transform("Off")}}>ESQUECEU A SENHA?</div>
@@ -65,9 +66,11 @@ export default function Login(){
                     <div className={action==="Sign Up"?"submit" : "submit gray"} onClick={()=>{setAction("Sign Up")}}>Sign Up</div>
                     <div className={action==="Login"?"submit" : "submit gray"} onClick={()=>{setAction("Login")}}>Login</div>
                 </div>
-                
 
-
+                <div className="credentials-display">
+                    <p>user: admin</p>
+                    <p>password: admin123</p>
+                </div>
             </div>
         </>
         

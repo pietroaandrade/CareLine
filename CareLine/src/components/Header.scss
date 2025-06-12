@@ -1,0 +1,200 @@
+@import '../styles/variables';
+
+body {
+    margin: 0;
+    font-family: $font-family;
+    background-color: $text-light;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: $primary-bg;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    padding: 0 $spacing-lg;
+    box-sizing: border-box;
+    position: relative;
+
+    > span {
+        display: flex;
+        align-items: center;
+        margin-left: $spacing-lg;
+
+        > img {
+            width: 50px;
+            height: 50px;
+        }
+
+        > h1 {
+            color: $text-light;
+            margin-left: $spacing-sm;
+            cursor: pointer;
+            font-size: $font-size-2xl;
+
+            > a {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .nav-links-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    > div > ul {
+        display: flex;
+        list-style: none;
+        margin-right: $spacing-lg;
+        padding: 0;
+
+        > li {
+            margin-left: $spacing-lg;
+            color: $text-light;
+            font-size: $font-size-lg;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+            text-decoration: none;
+            transition: transform $transition-base;
+
+            > a {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 2px;
+                left: 0;
+                bottom: -3px;
+                width: 0%;
+                transform: scaleX(0);
+                transform-origin: left;
+                background: $accent-color;
+                transition: transform $transition-base;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+
+                &::after {
+                    transform: scaleX(1);
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.button-link {
+    margin-left: $spacing-lg;
+
+    > button {
+        width: 200px;
+        height: 50px;
+        border-radius: 30px;
+        background-color: $accent-color;
+        border: 3px solid $accent-color;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        transition: background-color $transition-base,
+                    transform $transition-base,
+                    box-shadow $transition-base;
+
+        &:hover {
+            background-color: darken($accent-color, 5%);
+            border: 3px solid $accent-color;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+        }
+
+        > span {
+            font-size: $font-size-base;
+            font-weight: bold;
+            color: $text-light;
+        }
+    }
+}
+
+// Media Queries
+@media screen and (max-width: $tablet) {
+    .menu-icon {
+        display: block;
+    }
+
+    header {
+        > div > ul {
+            position: absolute;
+            top: 90px;
+            left: 0;
+            width: 100%;
+            background-color: $primary-bg;
+            flex-direction: column;
+            align-items: center;
+            padding: $spacing-lg 0;
+            margin: 0;
+            transform: translateY(-100%);
+            opacity: 0;
+            transition: transform $transition-base, opacity $transition-base;
+            pointer-events: none;
+
+            &.active {
+                transform: translateY(0);
+                opacity: 1;
+                pointer-events: all;
+            }
+
+            > li {
+                margin: $spacing-md 0;
+                font-size: $font-size-xl;
+            }
+        }
+
+        > span {
+            margin-left: $spacing-sm;
+
+            > img {
+                width: 40px;
+                height: 40px;
+            }
+
+            > h1 {
+                font-size: $font-size-xl;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    header {
+        height: 70px;
+
+        > span {
+            > img {
+                width: 30px;
+                height: 30px;
+            }
+
+            > h1 {
+                font-size: $font-size-lg;
+            }
+        }
+    }
+
+    .menu-icon {
+        padding: $spacing-xs;
+    }
+
+    .bar {
+        width: 20px;
+        height: 2px;
+    }
+} 

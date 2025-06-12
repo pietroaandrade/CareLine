@@ -22,7 +22,7 @@ export default function PatientForm({ onCreatePatient, insurances }) {
             temperature: parseInt(temperature),
             urgency
         });
-        // Clear form
+        
         setName('');
         setEmail('');
         setPhone('');
