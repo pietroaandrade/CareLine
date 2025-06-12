@@ -8,7 +8,7 @@ export default function Navbar() {
             <div>
                 <TopBar />
                 <RouteSelect /> 
-                <img src="./assets/CareLine.png" alt="logo" className="fixed bottom-10 w-full" />
+                <img src="../../images/CareLine.png" alt="logo" className="fixed bottom-10 w-[200px] border-t-2 border-stone-200" />
             </div>
             
         </div>

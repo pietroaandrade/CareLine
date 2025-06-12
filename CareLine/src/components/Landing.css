@@ -260,6 +260,8 @@
     justify-content: center;
     background: linear-gradient(to right, #2ABCB4, #4B63D4);
     gap: 60px;
+
+
 }
 
 
@@ -318,6 +320,7 @@
     display: block;
     font-weight: bold;
     text-align: left;
+    
 }
 
 .form-container > form > div > input{
