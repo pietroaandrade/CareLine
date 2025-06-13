@@ -122,7 +122,7 @@ export default function PatientsOverview({ patients, selectedPatientId, onViewDe
                                     <p className="font-medium">{currentPatient.email}</p>
                                 </div>
                                 <div className="flex-1">
-                                    <p className="text-gray-600 text-sm">Número de Telefone:</p>
+                                    <p className="text-gray-600 text-sm">Telefone:</p>
                                     <p className="font-medium">{currentPatient.phone}</p>
                                 </div>
                                 <div className="flex-1">

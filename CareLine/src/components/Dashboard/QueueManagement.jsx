@@ -55,12 +55,12 @@ export default function QueueManagement({
     return (
         <div className="space-y-6">
             <div className="flex justify-between items-center">
-                <h2 className="text-2xl font-bold text-gray-800">Queue Management</h2>
+                <h2 className="text-2xl font-bold text-gray-800">Gestão de Fila</h2>
                 <button
                     onClick={() => setShowForm(!showForm)}
                     className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
                 >
-                    {showForm ? 'Cancel' : 'Add Patient'}
+                    {showForm ? 'Cancelar' : 'Adicionar Paciente'}
                 </button>
             </div>
 
@@ -68,7 +68,7 @@ export default function QueueManagement({
                 <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md space-y-4">
                     <div className="grid grid-cols-2 gap-4">
                         <div>
-                            <label className="block text-sm font-medium text-gray-700">Name</label>
+                            <label className="block text-sm font-medium text-gray-700">Nome</label>
                             <input
                                 type="text"
                                 name="name"
@@ -90,7 +90,7 @@ export default function QueueManagement({
                             />
                         </div>
                         <div>
-                            <label className="block text-sm font-medium text-gray-700">Phone</label>
+                            <label className="block text-sm font-medium text-gray-700">Telefone</label>
                             <input
                                 type="tel"
                                 name="phone"
@@ -101,7 +101,7 @@ export default function QueueManagement({
                             />
                         </div>
                         <div>
-                            <label className="block text-sm font-medium text-gray-700">Address</label>
+                            <label className="block text-sm font-medium text-gray-700">Endereço</label>
                             <input
                                 type="text"
                                 name="address"
@@ -112,7 +112,7 @@ export default function QueueManagement({
                             />
                         </div>
                         <div>
-                            <label className="block text-sm font-medium text-gray-700">Insurance</label>
+                            <label className="block text-sm font-medium text-gray-700">Convênio</label>
                             <select
                                 name="insurance"
                                 value={formData.insurance}
@@ -120,7 +120,7 @@ export default function QueueManagement({
                                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                                 required
                             >
-                                <option value="">Select Insurance</option>
+                                <option value="">Selecione o Convênio</option>
                                 {insurances.map(insurance => (
                                     <option key={insurance} value={insurance}>
                                         {insurance}
@@ -129,7 +129,7 @@ export default function QueueManagement({
                             </select>
                         </div>
                         <div>
-                            <label className="block text-sm font-medium text-gray-700">Temperature</label>
+                            <label className="block text-sm font-medium text-gray-700">Temperatura</label>
                             <input
                                 type="number"
                                 step="0.1"
@@ -141,7 +141,7 @@ export default function QueueManagement({
                             />
                         </div>
                         <div>
-                            <label className="block text-sm font-medium text-gray-700">Symptoms</label>
+                            <label className="block text-sm font-medium text-gray-700">Sintomas</label>
                             <textarea
                                 name="symptoms"
                                 value={formData.symptoms}
@@ -151,7 +151,7 @@ export default function QueueManagement({
                             />
                         </div>
                         <div>
-                            <label className="block text-sm font-medium text-gray-700">Urgency</label>
+                            <label className="block text-sm font-medium text-gray-700">Urgência</label>
                             <select
                                 name="urgency"
                                 value={formData.urgency}
@@ -159,8 +159,8 @@ export default function QueueManagement({
                                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                                 required
                             >
-                                <option value="comum">Common</option>
-                                <option value="urgente">Urgent</option>
+                                <option value="comum">Comum</option>
+                                <option value="urgente">Urgente</option>
                             </select>
                         </div>
                     </div>
@@ -169,7 +169,7 @@ export default function QueueManagement({
                             type="submit"
                             className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
                         >
-                            Add Patient
+                            Adicionar Paciente
                         </button>
                     </div>
                 </form>
@@ -177,7 +177,7 @@ export default function QueueManagement({
 
             <div className="grid grid-cols-2 gap-6">
                 <div className="bg-white p-6 rounded-lg shadow-md">
-                    <h3 className="text-xl font-semibold mb-4">Urgent Queue</h3>
+                    <h3 className="text-xl font-semibold mb-4">Fila de Urgência</h3>
                     <div className="space-y-2">
                         {urgentWaitList.map(patient => (
                             <div
@@ -194,7 +194,7 @@ export default function QueueManagement({
                 </div>
 
                 <div className="bg-white p-6 rounded-lg shadow-md">
-                    <h3 className="text-xl font-semibold mb-4">Common Queue</h3>
+                    <h3 className="text-xl font-semibold mb-4">Fila Comum</h3>
                     <div className="space-y-2">
                         {commonWaitList.map(patient => (
                             <div
@@ -216,13 +216,13 @@ export default function QueueManagement({
                     onClick={onCallNextPatient}
                     className="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600"
                 >
-                    Call Next Patient
+                    Chamar Próximo Paciente
                 </button>
             </div>
 
             {calledPatient && (
                 <div className="bg-white p-6 rounded-lg shadow-md">
-                    <h3 className="text-xl font-semibold mb-4">Currently Attending</h3>
+                    <h3 className="text-xl font-semibold mb-4">Em Atendimento</h3>
                     <div className="p-3 bg-blue-100 rounded">
                         <p className="font-medium">{calledPatient.name}</p>
                     </div>

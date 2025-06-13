@@ -23,9 +23,9 @@ export default function PatientDetails({ patient, onUpdateReport }) {
 
     return (
         <div className="bg-white p-6 rounded shadow-md">
-            <h3 className="text-xl font-semibold mb-4">ID do Paciente: {patient.id} - {patient.name}</h3>
+            <h3 className="text-xl font-semibold mb-4">Paciente: {patient.id} - {patient.name}</h3>
             <p><strong>Email:</strong> {patient.email}</p>
-            <p><strong>Número de Telefone:</strong> {patient.phone}</p>
+            <p><strong>Telefone:</strong> {patient.phone}</p>
             <p><strong>Endereço:</strong> {patient.address}</p>
             <p><strong>Convênio:</strong> {patient.insurance}</p>
             <p><strong>Sintomas:</strong> {patient.symptoms}</p>

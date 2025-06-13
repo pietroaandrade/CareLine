@@ -14,14 +14,12 @@ export default function Login(){
 
     const navigate = useNavigate();
 
-    // Hardcoded credentials
     const validCredentials = {
       username: 'admin',
       password: 'admin123'
     };
 
     const handleLogin = () => {
-      // For simplicity, we'll use the email field as the username for login
       if (email === validCredentials.username && 
           password === validCredentials.password) {
         localStorage.setItem('isAuthenticated', 'true');
@@ -46,34 +44,43 @@ export default function Login(){
                 </div>
                 <div className="inputs">
                 {action === "Login" ? null : (
-                    <div className="input">
-                        <img src="/images/user-img.svg" alt="" />
+                    <div className="input-group mb-3">
+                        <span className="input-group-text">
+                            <img src="/images/user-img.svg" alt="" />
+                        </span>
                         <input
-                        type="text"
-                        placeholder="Usuário"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
+                            type="text"
+                            className="form-control"
+                            placeholder="Usuário"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
                         />
                     </div>
-                    )}
+                )}
 
-                    <div className="input">
-                    <img src="/images/mail-icon.svg" alt="" />
-                    <input
-                        type="text"
-                        placeholder="Email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                    />
+                    <div className="input-group mb-3">
+                        <span className="input-group-text">
+                            <img src="/images/mail-icon.svg" alt="" />
+                        </span>
+                        <input
+                            type="text"
+                            className="form-control"
+                            placeholder="Email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
                     </div>
-                    <div className="input">
-                    <img src="/images/lock-icon.svg" alt="" />
-                    <input
-                        type="password"
-                        placeholder="Senha"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                    />
+                    <div className="input-group mb-3">
+                        <span className="input-group-text">
+                            <img src="/images/lock-icon.svg" alt="" />
+                        </span>
+                        <input
+                            type="password"
+                            className="form-control"
+                            placeholder="Senha"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
                     </div>
                 </div>
                 {action==="Sign Up"? <div></div>:
@@ -82,9 +89,19 @@ export default function Login(){
                         <div className={state==="Off"?"underline-2":"underline-hover"}></div>
                     </div>
                 }
-                <div className="submit-container">
-                    <div className={action==="Sign Up"?"submit" : "submit gray"} onClick={handleSignUp}>Sign Up</div>
-                    <div className={action==="Login"?"submit" : "submit gray"} onClick={handleLogin}>Login</div>
+                <div className="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                    <button 
+                        className={`btn ${action==="Sign Up" ? "btn-primary" : "btn-secondary"}`} 
+                        onClick={handleSignUp}
+                    >
+                        Sign Up
+                    </button>
+                    <button 
+                        className={`btn ${action==="Login" ? "btn-primary" : "btn-secondary"}`} 
+                        onClick={handleLogin}
+                    >
+                        Login
+                    </button>
                 </div>
             </div>
         </>
